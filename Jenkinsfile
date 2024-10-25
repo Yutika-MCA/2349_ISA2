@@ -15,7 +15,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-               bat "docker build -t yutika01/python Dockerfile."
+               bat "docker build -t yutika01/python Dockerfile ."
             }
         }
 
