@@ -42,6 +42,7 @@ pipeline {
             bat "docker run -d --name 2349 yutika01/python"
           }
         }
+    
 
         // stage('Push Docker Image') {
         //     steps {
@@ -64,6 +65,6 @@ pipeline {
     
     
 }
-
+}
     
 
