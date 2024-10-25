@@ -55,11 +55,11 @@ pipeline {
         // }
         // }
 
-        // stage('Final message') {
-        //     steps {
-        //         echo 'Running tests...'
-        //     }
-        // }
+        stage('Final message') {
+            steps {
+                echo 'Running tests...'
+            }
+        }
         
     
     
