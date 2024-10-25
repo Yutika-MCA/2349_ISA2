@@ -27,19 +27,19 @@ pipeline {
 
         stage('create a container named 2349'){
           steps{
-            bat "docker run --name 2349_ yutika01/python"
+            bat "docker run --name 2349new yutika01/python"
           }
         }
       
         stage('Delete a container named 2349'){
           steps{
-            bat "docker rm 2349_"
+            bat "docker rm 2349new"
           }
         }
 
         stage('create and run a container 2349 in daemon mode'){
           steps{
-            bat "docker run -d --name 2349_ yutika01/python"
+            bat "docker run -d --name 2349new yutika01/python"
           }
         }
     
