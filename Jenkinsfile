@@ -19,11 +19,11 @@ pipeline {
             }
         }
 
-        // stage('Docker Login') {
-        //     steps {
-        //         bat 'docker login -u "mca.2349@unigoa.ac.in" -p "usingforjenkins" docker.io'
-        //         }
-        //     }
+        stage('Docker Login') {
+            steps {
+                bat 'docker login -u "mca.2349@unigoa.ac.in" -p "usingforjenkins" docker.io'
+                }
+            }
 
         stage('create a container named 2349'){
           steps{
